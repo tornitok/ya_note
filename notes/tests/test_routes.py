@@ -1,14 +1,12 @@
 from http import HTTPStatus
 
-# Импортируем функцию для определения модели пользователя.
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 
-# Импортируем класс комментария.
 from notes.models import Note
 
-# Получаем модель пользователя.
+
 User = get_user_model()
 
 
@@ -25,7 +23,6 @@ class TestRoutes(TestCase):
             author=cls.author,
             slug=4
         )
-
 
     def test_pages_availability(self):
         urls = (

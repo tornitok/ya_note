@@ -1,7 +1,10 @@
 # news/tests/test_trial.py
+from unittest import skip
+
 from django.contrib.auth import get_user_model
 from django.test import Client, TestCase
-from unittest import skip
+
+
 @skip
 class Test(TestCase):
 
